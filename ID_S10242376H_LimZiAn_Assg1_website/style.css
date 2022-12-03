@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color:white
+}
+a:hover{
+    color:red;
+}
+
+.topcontainer{
+    background-color: darkblue;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    height:125px;
+}
+.topcontainer a{
+  font-size: 30px;
+}
+.button{
+    color:cyan;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:2px;
+    margin:30px;
+    width: auto;
+    height: auto;
+}
+.r-btn:hover{
+    background-color:white;
+    color:red;
+}
+.buttonword{
+    color: white;
+    
+}
+
+body {
+    color:white;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .split{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px solid gray;
+  }
+  img{
+    width: 50% ;
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+    align-items:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  @media (max-width: 530px) {
+    .split {
+    flex-grow: 1;
+    flex-basis: 95%;
+    }
+  }
+  .banner{
+    color:lightgreen;
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+  }
+  .containers{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .splits{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 45%;
+  }
+  .contactcontainer{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid grey;
+  }
+  .veryspecific{
+    height:90px;
+    margin-top: 90px;
+  }
+  .soccontain{
+    display:flex;
+    flex-direction:row;
+    border:2px solid grey;
+    height:100px;
+    width:auto;
+    align-items:center;
+  }
+  .social{
+    height:80px;
+    width:80px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
