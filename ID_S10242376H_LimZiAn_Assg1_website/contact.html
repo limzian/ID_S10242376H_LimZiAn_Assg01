@@ -4,6 +4,15 @@
   <script src='script'.js></script>
     <head>
       <title>Dolphin Cyber Cafe - Surf the web</title>
+      <script src = 'script.js'></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+        emailjs.init("ko7zoLe5lBtFw5hSp");
+        })();
+      </script> 
     </head>
    <body>
       <nav>
@@ -37,19 +46,21 @@
       <section class = container>
         <section class = contactcontainer>
           <div class = 'splits'>
-            <p>
-              Full name:
-            </p>
-            <input type="text" id = "Name" >
-            <p>
-              Email Address:
-            </p>
-            <input type="email" id = "Email" >
-            <p>
-              Message:
-            </p>
-            <input type="text" id = "Message" ><br><br>
-            <button type ="button" id="button" > Submit </button>
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <p>
+                Full name:
+              </p>
+              <input type="text" id = "name" required>
+              <p>
+                Email Address:
+              </p>
+              <input type="email" id = "email" required>
+              <p>
+                Message:
+              </p>
+              <textarea id = "message" rows = '4' cols="30" required ></textarea><br><br>
+              <button type ="submit" id="button" > Submit </button>
+            </form>
           </div>
           <div class = 'splits'>
             <p>
